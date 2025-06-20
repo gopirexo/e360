@@ -5,7 +5,17 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { FaRobot } from 'react-icons/fa';
-import { FiArrowRight, FiCloud, FiCreditCard, FiFileText, FiHome, FiLogIn, FiPlayCircle, FiSettings, FiUsers, FiX, FiZap } from 'react-icons/fi';
+import {
+  FiArrowRight,
+  FiCloud,
+  FiCreditCard,
+  FiFileText,
+  FiHome,
+  FiLogIn,
+  FiPlayCircle,
+  FiUsers,
+  FiX
+} from 'react-icons/fi';
 
 export default function Main() {
   const [loggedIn, setLoggedIn] = useState<boolean>(false);
@@ -55,15 +65,15 @@ export default function Main() {
       {videoPreview && (
         <div className='fixed z-[999] video-preview w-full h-full bg-black p-20' onClick={() => setVideoPreview(false)}>
           <FiX className='text-4xl absolute top-5 right-5 text-white cursor-pointer' onClick={() => setVideoPreview(false)} />
-          <iframe allowFullScreen className='w-full h-full' src="https://www.youtube.com/embed/hVurBDPrPOQ" title="How it works"></iframe>
+          <iframe allowFullScreen className='w-full h-full' src="https://www.youtube.com/embed/hVurBDPrQ" title="How it works"></iframe>
         </div>
       )}
 
-      <div id="home" className='pt-24 min-h-screen w-screen bg-gradient-to-b from-purple-400 via-violet-500 to-indigo-600 flex flex-col justify-center items-center'>
+      <div className='pt-24 min-h-screen w-screen bg-gradient-to-b from-purple-400 via-violet-500 to-indigo-600 flex flex-col justify-center items-center'>
         <div className={"flex z-50 items-center justify-between fixed top-0 w-full p-3 md:px-10 duration-200 backdrop-blur-md border-b border-[rgba(255,255,255,0.1)] " + (color ? "bg-white text-black" : "text-white")}>
           <Link href="/"><div className="text-lg font-bold">🤖 {appName}</div></Link>
           <div className='hidden md:flex'>
-            <Link href="#home"><label onClick={() => setSelectedTab(0)} className={'mr-5 btn btn-sm btn-ghost ' + (selectedTab === 0 ? "btn-active" : "")}>Home</label></Link>
+            <Link href="/"><label onClick={() => setSelectedTab(0)} className={'mr-5 btn btn-sm btn-ghost ' + (selectedTab === 0 ? "btn-active" : "")}>Home</label></Link>
             <Link href="#features"><label onClick={() => setSelectedTab(1)} className={'mr-5 btn btn-sm btn-ghost ' + (selectedTab === 1 ? "btn-active" : "")}>Features</label></Link>
             <Link href="#how-it-works"><label onClick={() => setSelectedTab(2)} className={'mr-5 btn btn-sm btn-ghost ' + (selectedTab === 2 ? "btn-active" : "")}>How it works</label></Link>
           </div>
@@ -121,7 +131,7 @@ export default function Main() {
           </div>
         </div>
         <div className="divider divider-neutral"></div>
-        <p>© 2024 {appName}. All rights reserved.</p>
+        <p>© 2025 E360.ai. All rights reserved.</p>
       </div>
     </main>
   );
