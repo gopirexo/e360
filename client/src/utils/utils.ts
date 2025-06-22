@@ -10,7 +10,6 @@ score: an array containing [ assigned_score, total_score ]
 remarks: any additional remarks or comments regarding the answer.
 `;
 
-const serverUrl = "https://e360-hazel.vercel.app/";
 
 const bgColors: any = {
   a: ["#f12711", "#f5af19"],
@@ -42,8 +41,8 @@ const bgColors: any = {
 };
 
 // ✅ Extra exports to resolve import errors
-const appName = "Valuate.ai";
-const serverURL = "http://localhost:8080";
+const appName = "e360.ai";
+const serverURL = process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:8080";
 
 export { aiPrompt, serverUrl, serverURL, bgColors, appName, currencySymbol };
 const currencySymbol = "$"; // or "$" depending on your app
