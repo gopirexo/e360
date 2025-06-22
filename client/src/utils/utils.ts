@@ -40,9 +40,8 @@ const bgColors: any = {
   t: ["#f12711", "#f5af19"],
 };
 
-// ✅ Extra exports to resolve import errors
 const appName = "e360.ai";
 const serverURL = process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:8080";
+const currencySymbol = "$";
 
-export { aiPrompt, serverUrl, serverURL, bgColors, appName, currencySymbol };
-const currencySymbol = "$"; // or "$" depending on your app
+export { aiPrompt, serverURL, bgColors, appName, currencySymbol };
