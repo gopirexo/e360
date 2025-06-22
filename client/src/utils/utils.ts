@@ -41,7 +41,7 @@ const bgColors: any = {
 };
 
 const appName = "e360.ai";
-const serverURL = process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:8080";
+const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:8080";
 const currencySymbol = "$";
 
-export { aiPrompt, serverURL, bgColors, appName, currencySymbol };
+export { aiPrompt, serverUrl, bgColors, appName, currencySymbol };
