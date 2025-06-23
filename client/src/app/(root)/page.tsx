@@ -80,7 +80,7 @@ export default function Main() {
           {loggedIn ? (
             <Link href="/home"><label className='btn btn-primary'><FiHome /> Home</label></Link>
           ) : (
-            <Link href="/login"><label className='btn btn-primary'><FiLogIn /> Sign In</label></Link>
+            
           )}
         </div>
 
